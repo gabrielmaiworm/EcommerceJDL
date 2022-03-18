@@ -1,0 +1,11 @@
+id;placed_date;status;total_price;payment_method;payment_reference;payment_modification_reference;customer_details_id
+1;2022-03-18T06:32:49;OPEN;33498;IDEAL;Cambridgeshire invoice Buckinghamshire;withdrawal Configuration Multi-channelled;1
+2;2022-03-18T11:56:17;PENDING;94970;CREDIT_CARD;Developer;program;2
+3;2022-03-18T06:27:32;REFUND_FAILED;6346;IDEAL;COM;Ford;2
+4;2022-03-18T02:32:22;CANCELLED;87708;CREDIT_CARD;Branding enhance;generate invoice;1
+5;2022-03-18T18:43:20;REFUND_INITIATED;46169;CREDIT_CARD;bleeding-edge;port;2
+6;2022-03-18T05:55:51;PENDING;80;CREDIT_CARD;Small Music service-desk;Steel Car;1
+7;2022-03-18T15:08:40;CANCELLED;26697;IDEAL;Cliff;markets;2
+8;2022-03-18T01:26:36;CANCELLED;34860;IDEAL;neural withdrawal;aggregate;2
+9;2022-03-17T20:28:11;PAID;25972;IDEAL;Loan;Corporate Maryland;1
+10;2022-03-18T07:24:58;CANCELLED;17262;CREDIT_CARD;mission-critical schemas salmon;Programmable SMTP;2
