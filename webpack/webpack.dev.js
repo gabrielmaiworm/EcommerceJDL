@@ -17,7 +17,7 @@ module.exports = async options =>
     mode: ENV,
     entry: ['./src/main/webapp/app/index'],
     output: {
-      path: utils.root('target/classes/static/'),
+      path: utils.root('build/resources/main/static/'),
       filename: 'app/[name].bundle.js',
       chunkFilename: 'app/[id].chunk.js',
     },
@@ -45,7 +45,7 @@ module.exports = async options =>
     devServer: {
       hot: true,
       static: {
-        directory: './target/classes/static/',
+        directory: './build/resources/main/static/',
       },
       port: 9060,
       proxy: [
@@ -54,11 +54,6 @@ module.exports = async options =>
           target: `http${options.tls ? 's' : ''}://localhost:8080`,
           secure: false,
           changeOrigin: options.tls,
-        },
-        {
-          context: ['/websocket'],
-          target: 'ws://127.0.0.1:8080',
-          ws: true,
         },
       ],
       https: options.tls,
@@ -102,7 +97,7 @@ module.exports = async options =>
       ),
       new webpack.HotModuleReplacementPlugin(),
       new WebpackNotifierPlugin({
-        title: 'Ecommerce JDL',
+        title: 'Store',
         contentImage: path.join(__dirname, 'logo-jhipster.png'),
       }),
     ].filter(Boolean),
